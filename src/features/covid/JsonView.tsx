@@ -13,36 +13,36 @@ const JsonView: React.FC = () => {
     properties: {
       number: {
         title: "Number",
-        type: "number"
+        type: "number",
       },
       integer: {
         title: "Integer",
-        type: "integer"
+        type: "integer",
       },
       numberEnum: {
         type: "number",
         title: "Number enum",
-        enum: [1, 2, 3]
+        enum: [1, 2, 3],
       },
       numberEnumRadio: {
         type: "number",
         title: "Number enum",
-        enum: [1, 2, 3]
+        enum: [1, 2, 3],
       },
       integerRange: {
         title: "Integer range",
         type: "integer",
         minimum: 42,
-        maximum: 100
+        maximum: 100,
       },
       integerRangeSteps: {
         title: "Integer range (by 10)",
         type: "integer",
         minimum: 50,
         maximum: 100,
-        multipleOf: 10
-      }
-    }
+        multipleOf: 10,
+      },
+    },
   };
 
   const formData = {
@@ -50,34 +50,34 @@ const JsonView: React.FC = () => {
     integer: 42,
     numberEnum: 2,
     integerRange: 42,
-    integerRangeSteps: 80
+    integerRangeSteps: 80,
   };
   type FORMDATA = typeof formData;
 
   const uiSchema = {
     integer: {
-      "ui:widget": "updown"
+      "ui:widget": "updown",
     },
     numberEnumRadio: {
       "ui:widget": "radio",
       "ui:options": {
-        inline: true
-      }
+        inline: true,
+      },
     },
     integerRange: {
-      "ui:widget": "range"
+      "ui:widget": "range",
     },
     integerRangeSteps: {
-      "ui:widget": "range"
-    }
+      "ui:widget": "range",
+    },
   };
 
-  function handleChange({ formData }) {
+  function handleChange({ formData }: { formData: FORMDATA }) {
     // 入力されたデータ
     console.log(formData);
   }
 
-  function handleSubmit({ formData }) {
+  function handleSubmit({ formData }: { formData: FORMDATA }) {
     // 入力されたデータ
     console.log(formData);
   }
