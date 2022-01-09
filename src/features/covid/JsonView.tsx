@@ -46,7 +46,7 @@ const JsonView: React.FC = () => {
   };
 
   const formData = {
-    number: 3.14,
+    number: 3.142,
     integer: 42,
     numberEnum: 2,
     integerRange: 42,
