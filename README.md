@@ -43,15 +43,19 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-firebase hosting
+------------firebase hosting-------------------------------
 https://console.firebase.google.com/project/dashboard-covid-abes/hosting/sites?hl=ja
+------------update deploy method-------------------------------
 npm run build
-
+(firebase login)
+firebase deploy
+------------initial setup method-------------------------------
+npm run build
 npm install -g firebase-tools
 (firebase login)
 firebase init > Hosting:Configure …………… > use an existig project >dashbord-covid-abes> ? public directory "build",sigle page app, index.html not override
 firebase deploy
-------------history-------------------------------
+------------initial setup history-------------------------------
 PS C:\MyPrj\playground\dashboard-covid-abes\dashboard_covid_abes> npm install -g firebase-tools
 npm WARN deprecated uuid@3.4.0: Please upgrade to version 7 or higher. Older versions may use Math.random() in certain circumstances, which is known to be problematic. See https://v8.dev/blog/math-random for details.
 npm WARN deprecated uuid@3.4.0: Please upgrade to version 7 or higher. Older versions may use Math.random() in certain circumstances, which is known to be problematic. See https://v8.dev/blog/math-random for details.
