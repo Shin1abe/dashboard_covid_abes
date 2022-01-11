@@ -42,3 +42,138 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+firebase hosting
+https://console.firebase.google.com/project/dashboard-covid-abes/hosting/sites?hl=ja
+npm run build
+
+npm install -g firebase-tools
+(firebase login)
+firebase init > Hosting:Configure …………… > use an existig project >dashbord-covid-abes> ? public directory "build",sigle page app, index.html not override
+firebase deploy
+------------history-------------------------------
+PS C:\MyPrj\playground\dashboard-covid-abes\dashboard_covid_abes> npm install -g firebase-tools
+npm WARN deprecated uuid@3.4.0: Please upgrade to version 7 or higher. Older versions may use Math.random() in certain circumstances, which is known to be problematic. See https://v8.dev/blog/math-random for details.
+npm WARN deprecated uuid@3.4.0: Please upgrade to version 7 or higher. Older versions may use Math.random() in certain circumstances, which is known to be problematic. See https://v8.dev/blog/math-random for details.
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+
+added 722 packages, and audited 723 packages in 2m
+
+30 packages are looking for funding
+run `npm fund` for details
+
+15 vulnerabilities (6 low, 9 moderate)
+
+To address all issues, run:
+npm audit fix
+Run `npm audit` for details.
+PS C:\MyPrj\playground\dashboard-covid-abes\dashboard_covid_abes> firebase projects:list
+
+Error: Failed to authenticate, have you run firebase login?
+PS C:\MyPrj\playground\dashboard-covid-abes\dashboard_covid_abes> firebase login
+i Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+
+? Allow Firebase to collect CLI usage and error reporting information? Yes
+i To change your data collection preference at any time, run `firebase logout` and log in again.
+
+Visit this URL on this device to log in:
+https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=597752827&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+
+Waiting for authentication...
+
+- Success! Logged in as shin1abewk@gmail.com
+  PS C:\MyPrj\playground\dashboard-covid-abes\dashboard_covid_abes> firebase init
+
+       ######## #### ########  ######## ########     ###     ######  ########
+       ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+       ######    ##  ########  ######   ########  #########  ######  ######
+       ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+       ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+C:\MyPrj\playground\dashboard-covid-abes\dashboard_covid_abes
+
+Before we get started, keep in mind:
+
+- You are currently outside your home directory
+
+? Are you ready to proceed? Yes
+? Which Firebase features do you want to set up for this directory? Press Space to select features, then Enter to confirm your choices. Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
+
+=== Project Setup
+
+First, let's associate this project directory with a Firebase project.
+You can create multiple project aliases by running firebase use --add,
+but for now we'll just set up a default project.
+
+? Please select an option: Use an existing project
+? Select a default Firebase project for this directory: dashboard-covid-abes (dashboard-covid-abes)
+i Using project dashboard-covid-abes (dashboard-covid-abes)
+
+=== Hosting Setup
+
+Your public directory is the folder (relative to your project directory) that
+will contain Hosting assets to be uploaded with firebase deploy. If you
+have a build process for your assets, use your build's output directory.
+
+? What do you want to use as your public directory? build
+? Configure as a single-page app (rewrite all urls to /index.html)? No
+? Set up automatic builds and deploys with GitHub? Yes
+
+- Wrote build/404.html
+  ? File build/index.html already exists. Overwrite? No
+  i Skipping write of build/index.html
+
+i Detected a .git folder at C:\MyPrj\playground\dashboard-covid-abes\dashboard_covid_abes
+i Authorizing with GitHub to upload your service account to a GitHub repository's secrets store.
+
+Visit this URL on this device to log in:
+https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=430759733&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+
+Waiting for authentication...
+
+- Success! Logged into GitHub as Shin1abe
+
+? For which GitHub repository would you like to set up a GitHub workflow? (format: user/repository) Shin1abe/dashboard_covid_abes
+
+- Created service account github-action-446021045 with Firebase Hosting admin permissions.
+- Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_DASHBOARD_COVID_ABES.
+  i You can manage your secrets at https://github.com/Shin1abe/dashboard_covid_abes/settings/secrets.
+
+? What script should be run before every deploy? (npm ci && npm run build) npm run build
+? What script should be run before every deploy? npm ci && npm run build
+
+- Created workflow file C:\MyPrj\playground\dashboard-covid-abes\dashboard_covid_abes\.github/workflows/firebase-hosting-pull-request.yml
+  ? Set up automatic deployment to your site's live channel when a PR is merged? Yes
+  ? What is the name of the GitHub branch associated with your site's live channel? main
+
+- Created workflow file C:\MyPrj\playground\dashboard-covid-abes\dashboard_covid_abes\.github/workflows/firebase-hosting-merge.yml
+
+i Action required: Visit this URL to revoke authorization for the Firebase CLI GitHub OAuth App:
+https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+i Action required: Push any new workflow file(s) to your repo
+
+i Writing configuration info to firebase.json...
+i Writing project information to .firebaserc...
+
+- Firebase initialization complete!
+  PS C:\MyPrj\playground\dashboard-covid-abes\dashboard_covid_abes>
+  PS C:\MyPrj\playground\dashboard-covid-abes\dashboard_covid_abes> firebase deploy
+
+=== Deploying to 'dashboard-covid-abes'...
+
+i deploying hosting
+i hosting[dashboard-covid-abes]: beginning deploy...
+i hosting[dashboard-covid-abes]: found 19 files in build
+
+- hosting[dashboard-covid-abes]: file upload complete
+  i hosting[dashboard-covid-abes]: finalizing version...
+- hosting[dashboard-covid-abes]: version finalized
+  i hosting[dashboard-covid-abes]: releasing new version...
+- hosting[dashboard-covid-abes]: release complete
+
+- Deploy complete!
+
+Project Console: https://console.firebase.google.com/project/dashboard-covid-abes/overview
+Hosting URL: https://dashboard-covid-abes.web.app

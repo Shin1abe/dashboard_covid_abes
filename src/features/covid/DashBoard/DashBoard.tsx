@@ -6,7 +6,7 @@ import {
   Toolbar,
   Typography,
   Container,
-  Grid
+  Grid,
 } from "@material-ui/core";
 
 import { useSelector } from "react-redux";
@@ -21,11 +21,11 @@ import JsonView from "../JsonView";
 
 const useStyles = makeStyles((theme) => ({
   title: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   content: {
-    marginTop: 85
-  }
+    marginTop: 85,
+  },
 }));
 
 const DashBoard: React.FC = () => {
@@ -68,9 +68,9 @@ const DashBoard: React.FC = () => {
           <Grid item xs={12} md={12}>
             <Cards />
           </Grid>
-          <Grid item xs={12} md={12}>
+          {/* <Grid item xs={12} md={12}>
             <JsonView />
-          </Grid>
+          </Grid> */}
         </Grid>
       </Container>
     </div>
