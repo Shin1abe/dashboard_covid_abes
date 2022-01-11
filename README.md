@@ -43,7 +43,7 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-------------firebase hosting-------------------------------
+============= firebase hosting =============
 https://console.firebase.google.com/project/dashboard-covid-abes/hosting/sites?hl=ja
 ------------update deploy method-------------------------------
 npm run build
